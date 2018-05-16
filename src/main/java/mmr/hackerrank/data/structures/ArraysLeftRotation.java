@@ -1,7 +1,7 @@
 /**
  * Problem: https://github.com/oacApps/hackerrank/issues/1
  */
-package mmr.hackerrank;
+package mmr.hackerrank.data.structures;
 
 import java.util.Scanner;
 
@@ -28,17 +28,14 @@ public class ArraysLeftRotation {
         int[] output = new int[n];
         output = arrayLeftRotation(a, n, k);
         for(int i = 0; i < n; i++)
-            System.out.print(output[i] + " ");
-      
-        System.out.println();
-      
+            System.out.print(output[i] + " ");      
     }
 	/**
-	 * 
-	 * @param array a
-	 * @param int n
-	 * @param int k
-	 * @return array
+	 * Method to process array left rotation
+	 * @param array a -- given array
+	 * @param int n   -- number of array element 
+	 * @param int k   -- the number of left rotations you must perform
+	 * @return array  -- return new array
 	 */
 	private final static int[] arrayLeftRotation(int[] a, int n, int k) {		
 		for(int i = 0; i < k; i++){
